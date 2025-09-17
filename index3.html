@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+    <link rel="stylesheet" href="index3.html">
+    <link rel="stylesheet" href="index.html">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terima Kasih</title>
+        <!-- redirect ke index.html setelah 6 detik -->
+        <meta http-equiv="refresh" content="6;url=index.html">
+        <style>
+          :root{--bg:#f7fafc;--card:#ffffff;--accent:#2b6cb0;--text:#1a202c}
+          html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:var(--text);background:linear-gradient(180deg,#eef2ff,var(--bg))}
+          .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:2rem}
+          .card{background:var(--card);padding:2.25rem;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,.08);text-align:center;max-width:540px;width:100%}
+          .icon{font-size:3.25rem;color:var(--accent);margin-bottom:.5rem}
+          h1{margin:.2rem 0 0;font-size:1.5rem}
+          p{margin:.6rem 0 1.2rem;color:#4a5568}
+          .actions{display:flex;gap:.5rem;justify-content:center}
+          .btn{padding:.55rem .9rem;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+          .btn-primary{background:var(--accent);color:#fff}
+          .btn-secondary{background:#edf2f7;color:#1a202c}
+          a{color:inherit;text-decoration:none}
+          @media (max-width:480px){.card{padding:1.25rem}}
+        </style>
+    </head>
+    <body>
+      <div class="wrap">
+        <div class="card" role="status" aria-live="polite">
+          <div class="icon" aria-hidden="true">✅</div>
+          <h1 id="thanksTitle">Terima kasih!</h1>
+          <p id="thanksMsg">Data Anda telah berhasil dikirim. Kami akan memprosesnya secepatnya.</p>
+          <!-- tombol kembali ke beranda sekarang mengarah ke index.html -->
+          <div class="actions">
+            <a href="index2.html" class="btn btn-secondary" role="button">Kembali ke Form</a>
+            <a href="index.html" class="btn btn-primary" role="button">Kembali ke Beranda</a>
+          </div>
+          <p style="margin-top:.9rem;font-size:.85rem;color:#718096">Anda akan diarahkan otomatis dalam 6 detik.</p>
+        </div>
+      </div>
+    </body>
+</html>
